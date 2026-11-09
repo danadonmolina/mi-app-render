@@ -1,5 +1,3 @@
-Este archivo le dice a Render qué librerías de Python necesita instalar antes de arrancar la aplicación.
-
 flask
 gunicorn
 
