@@ -1,0 +1,7 @@
+Este archivo le dice a Render qué librerías de Python necesita instalar antes de arrancar la aplicación.
+
+flask
+gunicorn
+
+    • flask: la librería que crea el servidor web (usada en app.py).
+    • gunicorn: un servidor de producción que Render usará para ejecutar la aplicación de forma robusta (en lugar del servidor de pruebas que trae Flask).
