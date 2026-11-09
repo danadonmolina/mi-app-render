@@ -1,5 +1,10 @@
+from flask import Flask
+import socket
+import datetime
+
 # Creamos la aplicación web
 app = Flask(__name__)
+
 # Ruta principal: lo que se ve al entrar en la URL raíz ("/")
 @app.route("/")
 def home():
@@ -9,7 +14,7 @@ def home():
     <p>Visita <a href="/status">/status</a> para ver información del servidor.</p>
     """
 
-# Ruta secundaria: /status, útil para relacionarlo con la monitorización (UD2, punto 6)
+# Ruta secundaria: /status, útil para relacionarlo con la monitorización
 @app.route("/status")
 def status():
     info = {
